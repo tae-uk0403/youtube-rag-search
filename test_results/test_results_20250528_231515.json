@@ -1,0 +1,159 @@
+{
+  "test_config": {
+    "num_users": 20,
+    "num_requests_per_user": 1
+  },
+  "statistics": {
+    "total_requests": 20,
+    "successful_requests": 20,
+    "failed_requests": 0,
+    "total_time": 82.20567727088928,
+    "avg_processing_time": 42.60095384120941,
+    "min_processing_time": 3.8960766792297363,
+    "max_processing_time": 82.1841652393341,
+    "median_processing_time": 43.193673968315125,
+    "requests_per_second": 0.24329219907883917
+  },
+  "detailed_results": [
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 3.8960766792297363,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 8.089553833007812,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 11.701620817184448,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 15.499279499053955,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 19.488788843154907,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 23.897218704223633,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 27.994253158569336,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 31.69063091278076,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.99121141433716,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 41.20233368873596,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 45.18501424789429,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 49.29712462425232,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 53.096049785614014,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 57.09376668930054,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 60.98341488838196,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 64.58355236053467,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 68.78587651252747,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 73.67804980278015,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 77.68109512329102,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 82.1841652393341,
+      "success": true,
+      "error": null
+    }
+  ]
+}

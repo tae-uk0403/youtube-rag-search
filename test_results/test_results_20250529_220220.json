@@ -1,0 +1,89 @@
+{
+  "test_config": {
+    "num_users": 10,
+    "num_requests_per_user": 1
+  },
+  "statistics": {
+    "total_requests": 10,
+    "successful_requests": 7,
+    "failed_requests": 3,
+    "total_time": 19.603020668029785,
+    "avg_processing_time": 17.268450055803573,
+    "min_processing_time": 15.198868036270142,
+    "max_processing_time": 19.589741945266724,
+    "median_processing_time": 17.21342420578003,
+    "requests_per_second": 0.5101254632817288
+  },
+  "detailed_results": [
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 15.198868036270142,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 17.179161310195923,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 17.18964695930481,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 17.22516965866089,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 17.21342420578003,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 17.283138275146484,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": null,
+      "processing_time": 18.328450441360474,
+      "success": false,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": null,
+      "processing_time": 18.342182874679565,
+      "success": false,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": null,
+      "processing_time": 18.359278678894043,
+      "success": false,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 19.589741945266724,
+      "success": true,
+      "error": null
+    }
+  ]
+}

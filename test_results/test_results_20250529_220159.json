@@ -1,0 +1,89 @@
+{
+  "test_config": {
+    "num_users": 5,
+    "num_requests_per_user": 2
+  },
+  "statistics": {
+    "total_requests": 10,
+    "successful_requests": 10,
+    "failed_requests": 0,
+    "total_time": 19.092841148376465,
+    "avg_processing_time": 8.74331226348877,
+    "min_processing_time": 3.972653865814209,
+    "max_processing_time": 13.121967554092407,
+    "median_processing_time": 8.241882085800171,
+    "requests_per_second": 0.5237565180732852
+  },
+  "detailed_results": [
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 6.786744832992554,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "이거 진짜 웃기네",
+      "status_code": 200,
+      "processing_time": 12.990093469619751,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "이거 진짜 웃기네",
+      "status_code": 200,
+      "processing_time": 12.998331308364868,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 13.10925555229187,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 13.121967554092407,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "이거 진짜 웃기네",
+      "status_code": 200,
+      "processing_time": 9.697019338607788,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 4.093690395355225,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 3.972653865814209,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "이거 진짜 웃기네",
+      "status_code": 200,
+      "processing_time": 4.694438695907593,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "이거 진짜 웃기네",
+      "status_code": 200,
+      "processing_time": 5.968927621841431,
+      "success": true,
+      "error": null
+    }
+  ]
+}

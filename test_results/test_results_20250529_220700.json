@@ -1,0 +1,89 @@
+{
+  "test_config": {
+    "num_users": 10,
+    "num_requests_per_user": 1
+  },
+  "statistics": {
+    "total_requests": 10,
+    "successful_requests": 10,
+    "failed_requests": 0,
+    "total_time": 15.528912782669067,
+    "avg_processing_time": 10.562430453300475,
+    "min_processing_time": 4.09824013710022,
+    "max_processing_time": 15.506185531616211,
+    "median_processing_time": 13.400664448738098,
+    "requests_per_second": 0.6439600852907378
+  },
+  "detailed_results": [
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 4.09824013710022,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 4.204267501831055,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 4.279439449310303,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 5.875936985015869,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 13.205533981323242,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 13.595794916152954,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 14.295074224472046,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 15.091446161270142,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 15.47238564491272,
+      "success": true,
+      "error": null
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 15.506185531616211,
+      "success": true,
+      "error": null
+    }
+  ]
+}

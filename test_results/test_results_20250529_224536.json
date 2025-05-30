@@ -1,0 +1,1158 @@
+{
+  "test_config": {
+    "num_users": 20,
+    "num_requests_per_user": 1
+  },
+  "statistics": {
+    "total_requests": 20,
+    "successful_requests": 20,
+    "failed_requests": 0,
+    "total_time": 36.798110485076904,
+    "avg_processing_time": 33.4273802280426,
+    "avg_connection_time": 33.42737946510315,
+    "error_types": {},
+    "requests_per_second": 0.5435061674732129
+  },
+  "detailed_results": [
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 28.38442301750183,
+      "connection_time": 28.384422302246094,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224528",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 29.383190393447876,
+      "connection_time": 29.383189916610718,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224529",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 29.482978582382202,
+      "connection_time": 29.482977628707886,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224529",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 29.50753951072693,
+      "connection_time": 29.50753903388977,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224529",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 29.526410579681396,
+      "connection_time": 29.5264093875885,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224529",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 29.686611890792847,
+      "connection_time": 29.68661093711853,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224529",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 30.186940908432007,
+      "connection_time": 30.18693971633911,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224530",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 30.196207284927368,
+      "connection_time": 30.196206092834473,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224530",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 34.590447664260864,
+      "connection_time": 34.59044647216797,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224534",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.17123556137085,
+      "connection_time": 35.17123508453369,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224535",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.19245386123657,
+      "connection_time": 35.19245362281799,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224535",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.78200364112854,
+      "connection_time": 35.7820029258728,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224535",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.903034687042236,
+      "connection_time": 35.90303301811218,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224535",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 35.97637438774109,
+      "connection_time": 35.97637414932251,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224535",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.375927686691284,
+      "connection_time": 36.375927209854126,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.47990369796753,
+      "connection_time": 36.47990322113037,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.59560942649841,
+      "connection_time": 36.59560823440552,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.58172273635864,
+      "connection_time": 36.581722259521484,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.771026372909546,
+      "connection_time": 36.77102589607239,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    },
+    {
+      "query": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+      "status_code": 200,
+      "processing_time": 36.77356266975403,
+      "connection_time": 36.77356219291687,
+      "success": true,
+      "error": null,
+      "response_data": {
+        "timestamp": "20250529_224536",
+        "question": "다른 사람이 이기는 걸 좋아해 봐.. 그럼 아빠도 행복할걸?",
+        "results": [
+          {
+            "video_id": "DaA69rOjGgI",
+            "start_time": 486.52,
+            "content": "내가 내가 좋 안해서 기다 너무 무서워 끼를가 봐를 그냥 이렇게 그냥 어 내가 죽기 기다린다고 나 아빠가 아빠 안 죽었어 아직 아빠 근데 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 행복할걸 다른 사 다른 지렁이들 다른 지렁이들 행복 행복하게 단 지렁이들이 행복하게",
+            "youtube_link": "https://www.youtube.com/watch?v=DaA69rOjGgI&t=486s"
+          },
+          {
+            "video_id": "nCS3LVBPXb8",
+            "start_time": 502.039,
+            "content": "그러면은 천만 원짜리 뭘 사는게 아니라 만 원짜리 1천개를 사는게 맞지 않나 예 저는 그렇게 생각을 해요 아 아 하 하 우와 내가 안해 너 무서워 봐로 그냥 이렇게 그냥 어 아빠 안 죽었어 하지 아빠 근데 아빠 다른 사람이이기는 걸 좋아해 봐 응 그러면 아빠도 해복",
+            "youtube_link": "https://www.youtube.com/watch?v=nCS3LVBPXb8&t=502s"
+          },
+          {
+            "video_id": "2agHLgEnEzk",
+            "start_time": 8652.68,
+            "content": "찍 찍 아빠 엄청 잘해 아빠 엄청 잘해 지금 이건 재밌어 아빠가 잘하니까 좀 재밌어 찍 이것도 점점 빨라지면 아빠 못 할 텐데 어쩌지 찍 찍 어떻게 하면 이길까 이렇게 해야 돼 보이는 대로 해야겠어",
+            "youtube_link": "https://www.youtube.com/watch?v=2agHLgEnEzk&t=8652s"
+          },
+          {
+            "video_id": "To7nBNTAhls",
+            "start_time": 850.0,
+            "content": "걸 좋아해 봐 그럼 아빠도 행복할걸 여기다 하나 적을까요 뭐 됐다이 정도면 자 오늘 딱 미리 온 기념으로 뭐 이렇게 한번 남겨 보고요 아직도 못 본게 있어요 또 원래 사실 들어가면서 봐야 되는게 있는데 여기 전문 시청 여기 들어가면여 여기 입체 여기가 그래서 올록볼록 여기서 또",
+            "youtube_link": "https://www.youtube.com/watch?v=To7nBNTAhls&t=850s"
+          },
+          {
+            "video_id": "JCVqGeWl4MM",
+            "start_time": 4766.37,
+            "content": "그냥 반다 오히려 다 중에 어 그렇게 되더라 그래서 되게 차원에서 그래요 네 그리고 쭉 첫 지금 글쓰신 분께서 아버지 세상에 제일 사랑하고 아버지 행복하게 해 드렸으면 좋겠다 고 하셨는데 그 성적 좋은 성적을 받는 것은 너무 많은 일 중에 작은 하나일 뿐입니다 부모님 4 행복하게 될 수 있는 방법은 굉장히 많이 있어요 예 그렇기 때문에 너무 이 방법에만 몰두하지 않으셨으면 좋겠네요 응 그 학점을 땄다는 거야 만 더 시 받고 욕도 많이 해주는 아들이 더 저와",
+            "youtube_link": "https://www.youtube.com/watch?v=JCVqGeWl4MM&t=4766s"
+          },
+          {
+            "video_id": "dVj8AEwhZxI",
+            "start_time": 1183.76,
+            "content": "되더라고요음 이기고 있어 아빠 어 아빠 이기고 있지 아빠 저기에서 누구야 누구야 아빠 아빠 아빠 여기서 잠깐만 자동으로 돼서 보여줄게 좀 있다 싸우는 거 누 여자야 누가 아빠야 응 누가 아빠야 좀 있따 보여 줄게 아빠가 아빠가 아닌가봐 누가 아빠야 이거 아빠 아빠",
+            "youtube_link": "https://www.youtube.com/watch?v=dVj8AEwhZxI&t=1183s"
+          },
+          {
+            "video_id": "hWacsDPHm9g",
+            "start_time": 7133.84,
+            "content": "아빠 그래서 아빠가 또 또 카드 구자서 다시 이겨 다시 이기면 될 거 같아 다시 할 수 있을까 아빠가 할 수 있을까 응 아빠 아빠 할 수 있을까 어 이젠 아예 가슴을 했다고 나 같으면 그 다리에서 바로 포기를 눌렀을 것이야 할 수 있을까 과연 응 안돼 할 수 없을 것 같아 아빠는 내가 원해 게 아 아 아 할",
+            "youtube_link": "https://www.youtube.com/watch?v=hWacsDPHm9g&t=7133s"
+          }
+        ]
+      },
+      "error_type": "server_error"
+    }
+  ]
+}
