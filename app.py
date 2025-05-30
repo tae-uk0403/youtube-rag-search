@@ -42,6 +42,22 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# YouTube iframe API 스크립트 추가
+st.markdown(
+    """
+<script>
+    function onYouTubeIframeAPIReady() {
+        var player;
+        function onPlayerReady(event) {
+            player = event.target;
+        }
+    }
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+""",
+    unsafe_allow_html=True,
+)
+
 st.title("🔍 침착맨 유튜브 대사 검색 시스템")
 
 # 검색 가이드라인 추가
@@ -82,8 +98,26 @@ with st.expander("📺 예시 검색 결과 보기"):
                     st.markdown("---")
                     st.markdown(f"### 결과 {i}")
 
-                    # YouTube 영상 삽입
-                    st.video(result["youtube_link"])
+                    # YouTube 영상 ID 추출
+                    video_id = result["youtube_link"].split("v=")[-1]
+
+                    # 시작 시간 설정
+                    start_time = result["start_time"]
+
+                    # YouTube iframe 생성
+                    st.markdown(
+                        f"""
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/{video_id}?start={start_time}&autoplay=0"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        """,
+                        unsafe_allow_html=True,
+                    )
 
                     # 자막 내용과 타임스탬프 링크
                     st.markdown(
@@ -125,8 +159,26 @@ if question:
                     st.markdown("---")
                     st.markdown(f"### 결과 {i}")
 
-                    # YouTube 영상 삽입
-                    st.video(result["youtube_link"])
+                    # YouTube 영상 ID 추출
+                    video_id = result["youtube_link"].split("v=")[-1]
+
+                    # 시작 시간 설정
+                    start_time = result["start_time"]
+
+                    # YouTube iframe 생성
+                    st.markdown(
+                        f"""
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/{video_id}?start={start_time}&autoplay=0"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        """,
+                        unsafe_allow_html=True,
+                    )
 
                     # 자막 내용과 타임스탬프 링크
                     st.markdown(
