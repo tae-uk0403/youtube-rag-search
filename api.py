@@ -1,13 +1,14 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
-from rag import search_similar_sentences
+from rag import search_similar_sentences, search_similar_sentences_bm25
 import json
 from datetime import datetime
 import os
 import weaviate
-from weaviate.classes.init import Auth
-from config import WEAVIATE_URL, WEAVIATE_API_KEY
+
+# from weaviate.classes.init import Auth
+# from config import WEAVIATE_URL, WEAVIATE_API_KEY
 
 app = FastAPI(
     title="침착맨 유튜브 대사 검색 API",
@@ -22,9 +23,10 @@ _weaviate_client = None
 def get_weaviate_client():
     global _weaviate_client
     if _weaviate_client is None:
-        _weaviate_client = weaviate.connect_to_weaviate_cloud(
-            cluster_url=WEAVIATE_URL,
-            auth_credentials=Auth.api_key(api_key=WEAVIATE_API_KEY),
+        _weaviate_client = weaviate.connect_to_local(
+            host="127.0.0.1",
+            port=8080,
+            grpc_port=50051,
             skip_init_checks=True,
         )
     return _weaviate_client
@@ -44,6 +46,7 @@ os.makedirs(SEARCH_HISTORY_DIR, exist_ok=True)
 
 class QueryRequest(BaseModel):
     query: str
+    search_type: str = "vector"  # 기본값은 vector 검색
 
 
 class SearchResult(BaseModel):
@@ -100,8 +103,11 @@ def health_check():
 async def api_search(request: QueryRequest):
     """대사 검색 API 엔드포인트"""
     try:
-        # 검색 수행
-        results = search_similar_sentences(request.query)
+        # 검색 타입에 따라 다른 검색 함수 사용
+        if request.search_type == "bm25":
+            results = search_similar_sentences_bm25(request.query)
+        else:  # vector 검색
+            results = search_similar_sentences(request.query)
 
         if not results:
             raise HTTPException(status_code=404, detail="검색 결과가 없습니다.")

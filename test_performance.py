@@ -28,15 +28,25 @@ TEST_QUERIES = [
     "이거 진짜 좋다",
 ]
 
+# 검색 타입 목록 (현재 구현된 타입만 포함)
+SEARCH_TYPES = ["vector", "bm25"]
 
-def make_search_request(query):
+
+def make_search_request(query, search_type="vector"):
     """단일 검색 요청 수행 및 시간 측정"""
+    print(f"\n🔍 검색 시작: {search_type} - '{query}'")
     start_time = time.time()
     try:
         # 1. API 서버 연결 시도
+        print(f"  - API 서버 연결 시도 중...")
         connection_start = time.time()
-        response = requests.post(API_URL, json={"query": query})
+        response = requests.post(
+            API_URL,
+            json={"query": query, "search_type": search_type},
+            timeout=30,  # 타임아웃 설정 추가
+        )
         connection_time = time.time() - connection_start
+        print(f"  - API 서버 연결 완료 (소요시간: {connection_time:.2f}초)")
 
         end_time = time.time()
         processing_time = end_time - start_time
@@ -44,24 +54,45 @@ def make_search_request(query):
         # 응답 내용 파싱
         response_data = response.json() if response.status_code == 200 else None
 
+        if response.status_code == 200:
+            print(f"  ✅ 검색 성공 (총 소요시간: {processing_time:.2f}초)")
+        else:
+            print(f"  ❌ 검색 실패 (상태코드: {response.status_code})")
+
         return {
             "query": query,
+            "search_type": search_type,
             "status_code": response.status_code,
             "processing_time": processing_time,
-            "connection_time": connection_time,  # API 서버 연결 시간
+            "connection_time": connection_time,
             "success": response.status_code == 200,
             "error": None if response.status_code == 200 else response.text,
-            "response_data": response_data,  # 응답 데이터 저장
+            "response_data": response_data,
             "error_type": (
                 "connection_error"
                 if "Connection" in str(response.text)
                 else "server_error"
             ),
         }
-    except requests.exceptions.ConnectionError as e:
+    except requests.exceptions.Timeout:
         end_time = time.time()
+        print(f"  ⚠️ 요청 시간 초과 (소요시간: {end_time - start_time:.2f}초)")
         return {
             "query": query,
+            "search_type": search_type,
+            "status_code": None,
+            "processing_time": end_time - start_time,
+            "connection_time": end_time - start_time,
+            "success": False,
+            "error": "요청 시간 초과",
+            "error_type": "timeout_error",
+        }
+    except requests.exceptions.ConnectionError as e:
+        end_time = time.time()
+        print(f"  ❌ 연결 오류: {str(e)}")
+        return {
+            "query": query,
+            "search_type": search_type,
             "status_code": None,
             "processing_time": end_time - start_time,
             "connection_time": end_time - start_time,
@@ -71,8 +102,10 @@ def make_search_request(query):
         }
     except Exception as e:
         end_time = time.time()
+        print(f"  ❌ 예상치 못한 오류: {str(e)}")
         return {
             "query": query,
+            "search_type": search_type,
             "status_code": None,
             "processing_time": end_time - start_time,
             "connection_time": end_time - start_time,
@@ -85,7 +118,9 @@ def make_search_request(query):
 def run_concurrent_test(num_users, num_requests_per_user):
     """동시 사용자 테스트 실행"""
     print(
-        f"\n{num_users}명의 사용자가 각각 {num_requests_per_user}번씩 요청하는 테스트 시작..."
+        f"\n{'='*50}"
+        f"\n테스트 시작: {num_users}명의 사용자, 각 {num_requests_per_user}개 요청"
+        f"\n{'='*50}"
     )
 
     all_results = []
@@ -94,20 +129,52 @@ def run_concurrent_test(num_users, num_requests_per_user):
     # ThreadPoolExecutor를 사용하여 동시 요청 처리
     with concurrent.futures.ThreadPoolExecutor(max_workers=num_users) as executor:
         futures = []
-        for _ in range(num_users):
-            for query in TEST_QUERIES[:num_requests_per_user]:
-                futures.append(executor.submit(make_search_request, query))
+        for user_id in range(num_users):
+            print(f"\n👤 사용자 {user_id + 1} 요청 준비 중...")
+            for query_idx, query in enumerate(TEST_QUERIES[:num_requests_per_user], 1):
+                for search_type in SEARCH_TYPES:
+                    print(
+                        f"  - 요청 {query_idx}/{num_requests_per_user}: "
+                        f"{search_type} 검색"
+                    )
+                    futures.append(
+                        executor.submit(make_search_request, query, search_type)
+                    )
 
+        print("\n🔄 모든 요청 처리 중...")
         # 결과 수집
         for future in concurrent.futures.as_completed(futures):
-            all_results.append(future.result())
+            try:
+                result = future.result()
+                all_results.append(result)
+            except Exception as e:
+                print(f"❌ 요청 처리 중 오류 발생: {str(e)}")
 
     end_time = time.time()
     total_time = end_time - start_time
+    print(f"\n⏱️ 테스트 완료 (총 소요시간: {total_time:.2f}초)")
 
     # 결과 분석
     successful_requests = [r for r in all_results if r["success"]]
     failed_requests = [r for r in all_results if not r["success"]]
+
+    # 검색 타입별 성공률 계산
+    search_type_stats = {}
+    for search_type in SEARCH_TYPES:
+        type_requests = [r for r in all_results if r["search_type"] == search_type]
+        type_success = [r for r in type_requests if r["success"]]
+        search_type_stats[search_type] = {
+            "total": len(type_requests),
+            "success": len(type_success),
+            "success_rate": (
+                len(type_success) / len(type_requests) if type_requests else 0
+            ),
+            "avg_processing_time": (
+                statistics.mean([r["processing_time"] for r in type_success])
+                if type_success
+                else 0
+            ),
+        }
 
     # 에러 타입별 분석
     error_types = {}
@@ -130,7 +197,8 @@ def run_concurrent_test(num_users, num_requests_per_user):
             [r["connection_time"] for r in all_results]
         ),
         "error_types": error_types,
-        "requests_per_second": len(all_results) / total_time if total_time > 0 else 0,
+        "search_type_stats": search_type_stats,
+        "requests_per_second": (len(all_results) / total_time if total_time > 0 else 0),
     }
 
     # 결과 저장
@@ -162,6 +230,14 @@ def run_concurrent_test(num_users, num_requests_per_user):
     print(f"평균 연결 시간: {stats['avg_connection_time']:.2f}초")
     print(f"초당 처리 요청 수: {stats['requests_per_second']:.2f}")
 
+    print("\n🔍 검색 타입별 성능:")
+    for search_type, type_stats in search_type_stats.items():
+        print(f"\n{search_type} 검색:")
+        print(f"  총 요청: {type_stats['total']}")
+        print(f"  성공: {type_stats['success']}")
+        print(f"  성공률: {type_stats['success_rate']*100:.1f}%")
+        print(f"  평균 처리 시간: {type_stats['avg_processing_time']:.2f}초")
+
     print("\n❌ 에러 타입별 분석:")
     for error_type, count in stats["error_types"].items():
         print(f"{error_type}: {count}건")
@@ -172,6 +248,7 @@ def run_concurrent_test(num_users, num_requests_per_user):
         for i, failed in enumerate(failed_requests, 1):
             print(f"\n실패 #{i}")
             print(f"검색어: {failed['query']}")
+            print(f"검색 타입: {failed['search_type']}")
             print(f"상태 코드: {failed['status_code']}")
             print(f"처리 시간: {failed['processing_time']:.2f}초")
             print(f"연결 시간: {failed['connection_time']:.2f}초")
@@ -189,8 +266,6 @@ def main():
         (1, 1),  # 1명이 1개 요청
         (5, 2),  # 5명이 각각 2개 요청
         (10, 1),  # 10명이 각각 1개 요청
-        (20, 1),  # 20명이 각각 1개 요청
-        (50, 1),  # 50명이 각각 1개 요청
     ]
 
     print("🚀 성능 테스트 시작")
@@ -200,7 +275,7 @@ def main():
         print(f"테스트 시나리오: {num_users}명의 사용자, 각 {num_requests}개 요청")
         print(f"{'='*50}")
 
-        stats = run_concurrent_test(num_users, num_requests)
+        run_concurrent_test(num_users, num_requests)
 
         # 각 시나리오 사이에 잠시 대기
         time.sleep(2)

@@ -25,7 +25,7 @@ def main():
     # print("\n📥 1단계: 자막 수집 및 JSON 저장")
     # failed_videos = collect_transcripts(video_ids)
 
-    # 2단계: JSON 데이터를 DB에 업로드
+    # # 2단계: JSON 데이터를 DB에 업로드
     # if not failed_videos:
     #     print("\n📤 2단계: JSON 데이터를 DB에 업로드")
     #     upload_to_database()

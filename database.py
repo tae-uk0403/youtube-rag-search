@@ -1,7 +1,6 @@
 import os
 import json
 import weaviate
-from weaviate.classes.init import Auth
 from weaviate.classes.config import DataType, Property, Configure
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_weaviate import WeaviateVectorStore
@@ -19,12 +18,12 @@ from config import (
 )
 
 # 배치 크기 설정
-BATCH_SIZE = 100
+BATCH_SIZE = 200
 
 
 def load_uploaded_files():
     """업로드된 파일 목록 불러오기"""
-    uploaded_file = os.path.join(DATA_DIR, "uploaded_files.json")
+    uploaded_file = os.path.join(DATA_DIR, "local_uploaded_files.json")
     try:
         with open(uploaded_file, "r") as f:
             return json.load(f)
@@ -34,25 +33,23 @@ def load_uploaded_files():
 
 def save_uploaded_files(uploaded_files):
     """업로드된 파일 목록 저장"""
-    uploaded_file = os.path.join(DATA_DIR, "uploaded_files.json")
+    uploaded_file = os.path.join(DATA_DIR, "local_uploaded_files.json")
     with open(uploaded_file, "w") as f:
         json.dump(uploaded_files, f, indent=2)
 
 
 def init_weaviate_client():
     """Weaviate 클라이언트 초기화"""
-    return weaviate.connect_to_weaviate_cloud(
-        cluster_url=WEAVIATE_URL,
-        auth_credentials=Auth.api_key(api_key=WEAVIATE_API_KEY),
-        skip_init_checks=True,
+    return weaviate.connect_to_local(
+        headers={"X-OpenAI-Api-Key": WEAVIATE_API_KEY} if WEAVIATE_API_KEY else None
     )
 
 
 def init_vector_store(client):
     """벡터 스토어 초기화"""
     embedding = HuggingFaceEmbeddings(
-        model_name=EMBEDDING_MODEL,
-        model_kwargs={"device": "cpu", "trust_remote_code": True},
+        model_name="dragonkue/BGE-m3-ko",
+        model_kwargs={"device": "cpu"},
         encode_kwargs={
             "normalize_embeddings": True,
             "padding": True,

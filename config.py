@@ -5,22 +5,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API 서버 설정
-API_HOST = os.getenv("API_HOST", "api.search.com")
-API_PORT = os.getenv("API_PORT", "8000")
+# API_HOST = os.getenv("API_HOST", "api.search.com")
+API_HOST = os.getenv("API_HOST", "203.252.147.202")
+API_PORT = os.getenv("API_PORT", "8200")
 API_URL = f"http://{API_HOST}:{API_PORT}/api/search"
 
 # Weaviate 설정
-WEAVIATE_URL = os.getenv("WEAVIATE_URL")
-WEAVIATE_API_KEY = os.getenv("WEAVIATE_API_KEY")
+WEAVIATE_URL = "http://localhost:8080"  # 로컬 Weaviate 서버 URL
+WEAVIATE_API_KEY = None  # 로컬에서는 API 키가 필요 없음
 CLASS_NAME = "YoutubeTranscript"
 
 # OpenAI API 설정
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-
-# Weaviate 설정
-# WEAVIATE_URL = "9ouqyournwnqbwhl1oozq.c0.asia-southeast1.gcp.weaviate.cloud"
-# WEAVIATE_API_KEY = "7EIJy2Av3FYXjYzGEixxmYVRzTk34aHtlrbB"
 
 # 처리 설정
 SEGMENT_SIZE = 10

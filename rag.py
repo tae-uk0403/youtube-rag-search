@@ -1,4 +1,5 @@
 import os
+
 import weaviate
 from weaviate.classes.init import Auth
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -14,11 +15,16 @@ from config import (
 
 def init_weaviate_client():
     """Weaviate 클라이언트 초기화"""
-    return weaviate.connect_to_weaviate_cloud(
-        cluster_url=WEAVIATE_URL,
-        auth_credentials=Auth.api_key(api_key=WEAVIATE_API_KEY),
-        skip_init_checks=True,
-    )
+    try:
+        client = weaviate.connect_to_local(
+            host="localhost",
+            port=8080,
+            grpc_port=50051,
+            headers={},  # 필요시 헤더 추가
+        )
+        return client
+    except Exception as e:
+        raise
 
 
 def init_vector_store(client):
@@ -74,8 +80,76 @@ def search_similar_sentences(question):
         return results
 
     except Exception as e:
-        print(f"❌ 오류 발생: {str(e)}")
         return []
+    finally:
+        client.close()
+
+
+def search_similar_sentences_bm25(question: str):
+    client = init_weaviate_client()
+    try:
+        collection = client.collections.get("YoutubeTranscript")
+        response = collection.query.bm25(
+            query=question, query_properties=["content"], limit=7
+        )
+
+        results = []
+        for obj in response.objects:
+            props = obj.properties
+            results.append(
+                {
+                    "video_id": props["video_id"],
+                    "start_time": props["start"],
+                    "content": props["content"],
+                    "youtube_link": get_youtube_link(props["video_id"], props["start"]),
+                }
+            )
+
+        return results
+
+    finally:
+        client.close()
+
+
+def search_similar_sentences_exact_match(question: str):
+    """입력된 문장의 모든 단어를 포함한 문장 검색"""
+    client = init_weaviate_client()
+    try:
+        search_terms = question.strip().split()
+
+        collection = client.collections.get("YoutubeTranscript")
+
+        # AND 조건으로 모든 단어 포함 필터 구성
+        filter_conditions = [
+            {"path": ["content"], "operator": "Contains", "valueText": term}
+            for term in search_terms
+        ]
+
+        where_clause = {
+            "operator": "And",
+            "operands": filter_conditions,
+        }
+
+        response = collection.query.fetch_objects(
+            limit=10,
+            return_properties=["video_id", "start", "content"],
+            filters=where_clause,
+        )
+
+        results = []
+        for obj in response.objects:
+            props = obj.properties
+            results.append(
+                {
+                    "video_id": props["video_id"],
+                    "start_time": props["start"],
+                    "content": props["content"],
+                    "youtube_link": get_youtube_link(props["video_id"], props["start"]),
+                }
+            )
+
+        return results
+
     finally:
         client.close()
 
@@ -103,55 +177,34 @@ def find_best_video_for_question(question):
         best_video_id = sorted_videos[0][0]
         best_score = sum(video_scores[best_video_id]) / len(video_scores[best_video_id])
 
-        print(f"\n✅ 가장 관련 있는 영상: {get_youtube_link(best_video_id, 0)}")
-        print(f"🔍 평균 유사도 점수: {best_score:.4f}")
-        print(f"📄 관련 문서 수: {len(video_scores[best_video_id])}")
-
-        # 관련 문장 간단히 보기
-        print("\n🧩 관련 자막:")
-        for doc, score in docs:
-            if doc.metadata["video_id"] == best_video_id:
-                print(
-                    f"⏱️ {doc.metadata['start']}초 → "
-                    f"{doc.page_content}  (유사도: {score:.4f})"
-                )
-
         return best_video_id
 
     except Exception as e:
-        print(f"❌ 오류 발생: {str(e)}")
+        return None
     finally:
         client.close()
 
 
 def main():
     """메인 함수"""
-    print("🔍 유사 문장 검색 시스템이 준비되었습니다.")
-    print("1: 유사 문장 검색")
-    print("2: 가장 관련 있는 영상 찾기")
-    print("종료하려면 'q' 또는 'quit'를 입력하세요.")
-
     while True:
-        choice = input("\n❓ 기능 선택 (1/2): ").strip()
+        choice = input("\n기능 선택 (1/2): ").strip()
 
         if choice.lower() in ["q", "quit"]:
-            print("👋 프로그램을 종료합니다.")
             break
 
         if choice not in ["1", "2"]:
-            print("❌ 1 또는 2를 입력해주세요.")
             continue
 
-        question = input("❓ 검색어: ").strip()
+        question = input("검색어: ").strip()
         if not question:
-            print("❌ 검색어를 입력해주세요.")
             continue
 
         if choice == "1":
             results = search_similar_sentences(question)
             for result in results:
-                print(f"📺 영상: {result['youtube_link']}")
-                print(f"⏱️ {result['start_time']}초 → {result['content']}")
+                print(f"영상: {result['youtube_link']}")
+                print(f"{result['start_time']}초 → {result['content']}")
         else:
             find_best_video_for_question(question)
 
