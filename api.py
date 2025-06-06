@@ -4,6 +4,7 @@ from typing import List, Dict, Any
 from rag import (
     search_similar_sentences,
     search_similar_sentences_bm25,
+    search_similar_sentences_exact_match,
 )
 
 from tasks import search_task_vector
@@ -104,7 +105,12 @@ def health_check():
 async def api_search(request: QueryRequest):
     total_start_time = time.time()
     try:
-        if request.search_type == "bm25":
+        if request.search_type == "exact_match":
+            search_start_time = time.time()
+            results = search_similar_sentences_exact_match(request.query)
+            search_time = time.time() - search_start_time
+            print(f"Exact Match 검색 시간: {search_time:.2f}초")
+        elif request.search_type == "bm25":
             search_start_time = time.time()
             results = search_similar_sentences_bm25(request.query)
             search_time = time.time() - search_start_time

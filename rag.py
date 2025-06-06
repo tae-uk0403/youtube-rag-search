@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 from collections import defaultdict
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_weaviate import WeaviateVectorStore
+from weaviate.classes.query import Filter
 
 from config import (
     WEAVIATE_URL,
@@ -120,6 +121,42 @@ def search_similar_sentences_bm25(question: str):
         collection = client.collections.get("YoutubeTranscript")
         response = collection.query.bm25(
             query=question, query_properties=["content"], limit=7
+        )
+
+        results = []
+        for obj in response.objects:
+            props = obj.properties
+            results.append(
+                {
+                    "video_id": props["video_id"],
+                    "start_time": props["start"],
+                    "content": props["content"],
+                    "youtube_link": get_youtube_link(props["video_id"], props["start"]),
+                }
+            )
+
+        return results
+
+    finally:
+        client.close()
+
+
+def search_similar_sentences_exact_match(question: str):
+    client = init_weaviate_client()
+    try:
+        search_terms = question.strip().split()
+        collection = client.collections.get("YoutubeTranscript")
+
+        # 검색어 각각을 포함하는 조건 생성 (SQL LIKE '%term%')
+        filter_conditions = [
+            Filter.by_property("content").like(f"%{term}%") for term in search_terms
+        ]
+        where_clause = Filter.all(*filter_conditions)
+
+        response = collection.query.fetch_objects(
+            limit=10,
+            return_properties=["video_id", "start", "content"],
+            filters=where_clause,
         )
 
         results = []

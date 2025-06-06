@@ -30,6 +30,7 @@ TEST_QUERIES = [
 
 # 검색 타입 목록 (현재 구현된 타입만 포함)
 SEARCH_TYPES = [
+    "exact_match",
     "vector",
     "vector_no_celery",
 ]  # Celery 사용 여부 비교를 위한 타입 추가
@@ -285,7 +286,7 @@ def main():
 
     # 다양한 사용자 수와 요청 수로 테스트
     test_scenarios = [
-        (20, 1),  # 10명이 각각 1개 요청
+        (10, 1),  # 10명이 각각 1개 요청
     ]
 
     print("\n🚀 성능 테스트 시작")
