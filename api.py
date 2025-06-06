@@ -1,14 +1,21 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
-from rag import search_similar_sentences, search_similar_sentences_bm25
+from rag import (
+    search_similar_sentences,
+    search_similar_sentences_bm25,
+)
+
+from tasks import search_task_vector
+from fastapi import BackgroundTasks
+
+
 import json
 from datetime import datetime
 import os
 import weaviate
-
-# from weaviate.classes.init import Auth
-# from config import WEAVIATE_URL, WEAVIATE_API_KEY
+import asyncio
+import time
 
 app = FastAPI(
     title="침착맨 유튜브 대사 검색 API",
@@ -16,7 +23,6 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# Weaviate 클라이언트 싱글톤
 _weaviate_client = None
 
 
@@ -39,14 +45,13 @@ def close_weaviate_client():
         _weaviate_client = None
 
 
-# 검색 기록을 저장할 디렉토리 생성
 SEARCH_HISTORY_DIR = "search_history"
 os.makedirs(SEARCH_HISTORY_DIR, exist_ok=True)
 
 
 class QueryRequest(BaseModel):
     query: str
-    search_type: str = "vector"  # 기본값은 vector 검색
+    search_type: str = "vector"
 
 
 class SearchResult(BaseModel):
@@ -63,7 +68,6 @@ class SearchResponse(BaseModel):
 
 
 def save_search_history(question: str, results: List[Dict[str, Any]]) -> str:
-    """검색 기록을 JSON 파일로 저장"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"{SEARCH_HISTORY_DIR}/search_{timestamp}.json"
 
@@ -77,19 +81,16 @@ def save_search_history(question: str, results: List[Dict[str, Any]]) -> str:
 
 @app.on_event("startup")
 def startup_event():
-    """앱 시작 시 Weaviate 클라이언트 초기화"""
     get_weaviate_client()
 
 
 @app.on_event("shutdown")
 def shutdown_event():
-    """앱 종료 시 Weaviate 클라이언트 종료"""
     close_weaviate_client()
 
 
 @app.get("/health")
 def health_check():
-    """API 서버 상태 확인"""
     try:
         client = get_weaviate_client()
         return {"status": "healthy", "weaviate": client.is_ready()}
@@ -101,30 +102,91 @@ def health_check():
 
 @app.post("/api/search", response_model=SearchResponse)
 async def api_search(request: QueryRequest):
-    """대사 검색 API 엔드포인트"""
+    total_start_time = time.time()
     try:
-        # 검색 타입에 따라 다른 검색 함수 사용
         if request.search_type == "bm25":
+            search_start_time = time.time()
             results = search_similar_sentences_bm25(request.query)
-        else:  # vector 검색
-            results = search_similar_sentences(request.query)
+            search_time = time.time() - search_start_time
+            print(f"BM25 검색 시간: {search_time:.2f}초")
+        else:
+            # 벡터 검색은 Celery 태스크로 처리
+            task_start_time = time.time()
+            task = search_task_vector.delay(request.query)
+            # 최대 50초 정도 기다림
+            results = task.get(timeout=50)
+            task_time = time.time() - task_start_time
+            print(f"Celery 태스크 처리 시간: {task_time:.2f}초")
+
+            if isinstance(results, dict) and results.get("error"):
+                raise HTTPException(status_code=500, detail=results["error"])
 
         if not results:
             raise HTTPException(status_code=404, detail="검색 결과가 없습니다.")
 
         # 검색 결과 저장
+        save_start_time = time.time()
         save_search_history(request.query, results)
+        save_time = time.time() - save_start_time
+        print(f"검색 결과 저장 시간: {save_time:.2f}초")
 
-        # 응답 생성
-        response = {
+        total_time = time.time() - total_start_time
+        print(f"\n=== API 엔드포인트 총 소요 시간: {total_time:.2f}초 ===\n")
+
+        return {
             "timestamp": datetime.now().strftime("%Y%m%d_%H%M%S"),
             "question": request.query,
             "results": results,
         }
 
-        return response
+    except Exception as e:
+        total_time = time.time() - total_start_time
+        print(
+            f"\n=== API 엔드포인트 오류 발생 - 총 소요 시간: {total_time:.2f}초 ===\n"
+        )
+        raise HTTPException(
+            status_code=500, detail=f"검색 중 오류가 발생했습니다: {str(e)}"
+        )
+
+
+@app.post("/api/search_no_celery", response_model=SearchResponse)
+async def api_search_no_celery(request: QueryRequest):
+    total_start_time = time.time()
+    try:
+        if request.search_type == "vector_no_celery":
+            # 벡터 검색을 직접 실행 (Celery 없이)
+            search_start_time = time.time()
+            results = await search_similar_sentences(request.query)
+            search_time = time.time() - search_start_time
+            print(f"벡터 검색 시간 (Celery 없음): {search_time:.2f}초")
+        else:
+            raise HTTPException(status_code=400, detail="잘못된 검색 타입입니다.")
+
+        if not results:
+            raise HTTPException(status_code=404, detail="검색 결과가 없습니다.")
+
+        # 검색 결과 저장
+        save_start_time = time.time()
+        save_search_history(request.query, results)
+        save_time = time.time() - save_start_time
+        print(f"검색 결과 저장 시간: {save_time:.2f}초")
+
+        total_time = time.time() - total_start_time
+        print(
+            f"\n=== API 엔드포인트 총 소요 시간 (Celery 없음): {total_time:.2f}초 ===\n"
+        )
+
+        return {
+            "timestamp": datetime.now().strftime("%Y%m%d_%H%M%S"),
+            "question": request.query,
+            "results": results,
+        }
 
     except Exception as e:
+        total_time = time.time() - total_start_time
+        print(
+            f"\n=== API 엔드포인트 오류 발생 - 총 소요 시간: {total_time:.2f}초 ===\n"
+        )
         raise HTTPException(
             status_code=500, detail=f"검색 중 오류가 발생했습니다: {str(e)}"
         )
@@ -132,7 +194,6 @@ async def api_search(request: QueryRequest):
 
 @app.get("/")
 async def root():
-    """API 서버 상태 확인"""
     return {
         "status": "running",
         "message": "침착맨 유튜브 대사 검색 API 서버가 실행 중입니다.",

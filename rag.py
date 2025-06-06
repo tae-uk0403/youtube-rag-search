@@ -1,10 +1,12 @@
 import os
-
 import weaviate
-from weaviate.classes.init import Auth
+import asyncio
+import time
+from concurrent.futures import ThreadPoolExecutor
+from collections import defaultdict
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_weaviate import WeaviateVectorStore
-from collections import defaultdict
+
 from config import (
     WEAVIATE_URL,
     CLASS_NAME,
@@ -12,23 +14,27 @@ from config import (
     EMBEDDING_MODEL,
 )
 
+_executor = ThreadPoolExecutor(max_workers=4)
+
 
 def init_weaviate_client():
-    """Weaviate 클라이언트 초기화"""
+    start_time = time.time()
     try:
         client = weaviate.connect_to_local(
             host="localhost",
             port=8080,
             grpc_port=50051,
-            headers={},  # 필요시 헤더 추가
+            headers={},
         )
+        connection_time = time.time() - start_time
+        print(f"DB 연결 시간: {connection_time:.2f}초")
         return client
     except Exception as e:
         raise
 
 
 def init_vector_store(client):
-    """벡터 스토어 초기화"""
+    start_time = time.time()
     embedding = HuggingFaceEmbeddings(
         model_name=EMBEDDING_MODEL,
         model_kwargs={"device": "cpu", "trust_remote_code": True},
@@ -39,32 +45,45 @@ def init_vector_store(client):
         },
     )
 
-    return WeaviateVectorStore(
+    vectorstore = WeaviateVectorStore(
         client=client,
         index_name=CLASS_NAME,
         text_key="content",
         embedding=embedding,
     )
+    init_time = time.time() - start_time
+    print(f"벡터 스토어 초기화 시간: {init_time:.2f}초")
+    return vectorstore
 
 
 def get_youtube_link(video_id, start_time):
-    """YouTube 링크 생성 (타임스탬프 포함)"""
     return f"https://www.youtube.com/watch?v={video_id}&t={int(start_time)}s"
 
 
-def search_similar_sentences(question):
-    """질문과 유사한 문장 검색"""
+async def search_similar_sentences(question):
+    total_start_time = time.time()
+
+    # DB 연결 시간 측정
+    client_start_time = time.time()
     client = init_weaviate_client()
+    client_time = time.time() - client_start_time
+
+    # 벡터 스토어 초기화 시간 측정
+    store_start_time = time.time()
     vectorstore = init_vector_store(client)
+    store_time = time.time() - store_start_time
 
     try:
-        # 유사 문장 검색
-        docs = vectorstore.similarity_search(
-            question,
-            k=7,  # 검색할 문서 수
+        # 검색 시간 측정
+        search_start_time = time.time()
+        loop = asyncio.get_event_loop()
+        docs = await loop.run_in_executor(
+            _executor, lambda: vectorstore.similarity_search(question, k=7)
         )
+        search_time = time.time() - search_start_time
 
-        # 결과를 딕셔너리 형태로 반환
+        # 결과 처리 시간 측정
+        process_start_time = time.time()
         results = []
         for doc in docs:
             result = {
@@ -76,11 +95,21 @@ def search_similar_sentences(question):
                 ),
             }
             results.append(result)
+        process_time = time.time() - process_start_time
+
+        total_time = time.time() - total_start_time
+
+        # 시간 측정 결과 출력
+        print("\n=== 성능 측정 결과 ===")
+        print(f"DB 연결 시간: {client_time:.2f}초")
+        print(f"벡터 스토어 초기화 시간: {store_time:.2f}초")
+        print(f"검색 실행 시간: {search_time:.2f}초")
+        print(f"결과 처리 시간: {process_time:.2f}초")
+        print(f"총 소요 시간: {total_time:.2f}초")
+        print("====================\n")
 
         return results
 
-    except Exception as e:
-        return []
     finally:
         client.close()
 
@@ -109,105 +138,3 @@ def search_similar_sentences_bm25(question: str):
 
     finally:
         client.close()
-
-
-def search_similar_sentences_exact_match(question: str):
-    """입력된 문장의 모든 단어를 포함한 문장 검색"""
-    client = init_weaviate_client()
-    try:
-        search_terms = question.strip().split()
-
-        collection = client.collections.get("YoutubeTranscript")
-
-        # AND 조건으로 모든 단어 포함 필터 구성
-        filter_conditions = [
-            {"path": ["content"], "operator": "Contains", "valueText": term}
-            for term in search_terms
-        ]
-
-        where_clause = {
-            "operator": "And",
-            "operands": filter_conditions,
-        }
-
-        response = collection.query.fetch_objects(
-            limit=10,
-            return_properties=["video_id", "start", "content"],
-            filters=where_clause,
-        )
-
-        results = []
-        for obj in response.objects:
-            props = obj.properties
-            results.append(
-                {
-                    "video_id": props["video_id"],
-                    "start_time": props["start"],
-                    "content": props["content"],
-                    "youtube_link": get_youtube_link(props["video_id"], props["start"]),
-                }
-            )
-
-        return results
-
-    finally:
-        client.close()
-
-
-def find_best_video_for_question(question):
-    """질문과 가장 관련 있는 영상 찾기"""
-    client = init_weaviate_client()
-    vectorstore = init_vector_store(client)
-
-    try:
-        docs = vectorstore.similarity_search_with_score(question, k=1000)
-
-        # 📊 video_id → [scores] 로 매핑
-        video_scores = defaultdict(list)
-        for doc, score in docs:
-            video_id = doc.metadata["video_id"]
-            video_scores[video_id].append(score)
-
-        # 📈 평균 유사도 기준 정렬 (score가 낮을수록 유사함)
-        sorted_videos = sorted(
-            video_scores.items(), key=lambda item: sum(item[1]) / len(item[1])
-        )
-
-        # 📺 가장 관련 있는 영상
-        best_video_id = sorted_videos[0][0]
-        best_score = sum(video_scores[best_video_id]) / len(video_scores[best_video_id])
-
-        return best_video_id
-
-    except Exception as e:
-        return None
-    finally:
-        client.close()
-
-
-def main():
-    """메인 함수"""
-    while True:
-        choice = input("\n기능 선택 (1/2): ").strip()
-
-        if choice.lower() in ["q", "quit"]:
-            break
-
-        if choice not in ["1", "2"]:
-            continue
-
-        question = input("검색어: ").strip()
-        if not question:
-            continue
-
-        if choice == "1":
-            results = search_similar_sentences(question)
-            for result in results:
-                print(f"영상: {result['youtube_link']}")
-                print(f"{result['start_time']}초 → {result['content']}")
-        else:
-            find_best_video_for_question(question)
-
-
-if __name__ == "__main__":
-    main()

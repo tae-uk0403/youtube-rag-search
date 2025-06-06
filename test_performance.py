@@ -8,7 +8,7 @@ import os
 from config import API_URL  # API_URL을 config에서 import
 
 # API 서버 URL을 config에서 가져옴
-# API_URL = "http://203.252.147.201:8000/api/search"  # 이 줄 제거
+API_URL = "http://203.252.147.202:8200/api/search"
 
 # 테스트 결과를 저장할 디렉토리
 TEST_RESULTS_DIR = "test_results"
@@ -29,24 +29,51 @@ TEST_QUERIES = [
 ]
 
 # 검색 타입 목록 (현재 구현된 타입만 포함)
-SEARCH_TYPES = ["vector", "bm25"]
+SEARCH_TYPES = [
+    "vector",
+    "vector_no_celery",
+]  # Celery 사용 여부 비교를 위한 타입 추가
+
+
+def check_api_health():
+    """API 서버 상태 확인"""
+    try:
+        response = requests.get("http://203.252.147.202:8200/health", timeout=10)
+        if response.status_code == 200:
+            health_data = response.json()
+            print(f"API 서버 응답 시간: {response.elapsed.total_seconds():.2f}초")
+            return True
+        else:
+            print(f"API 서버 응답 오류 (상태 코드: {response.status_code})")
+            return False
+    except requests.exceptions.ConnectionError:
+        print("API 서버에 연결할 수 없습니다.")
+        return False
+    except requests.exceptions.Timeout:
+        print("API 서버 응답 시간 초과")
+        return False
+    except Exception as e:
+        print(f"예상치 못한 오류: {str(e)}")
+        return False
 
 
 def make_search_request(query, search_type="vector"):
     """단일 검색 요청 수행 및 시간 측정"""
-    print(f"\n🔍 검색 시작: {search_type} - '{query}'")
     start_time = time.time()
     try:
         # 1. API 서버 연결 시도
-        print(f"  - API 서버 연결 시도 중...")
         connection_start = time.time()
+
+        # Celery 사용 여부에 따라 다른 엔드포인트 사용
+        if search_type == "vector_no_celery":
+            url = "http://203.252.147.202:8200/api/search_no_celery"
+        else:
+            url = API_URL
+
         response = requests.post(
-            API_URL,
-            json={"query": query, "search_type": search_type},
-            timeout=30,  # 타임아웃 설정 추가
+            url, json={"query": query, "search_type": search_type}, timeout=60
         )
         connection_time = time.time() - connection_start
-        print(f"  - API 서버 연결 완료 (소요시간: {connection_time:.2f}초)")
 
         end_time = time.time()
         processing_time = end_time - start_time
@@ -55,9 +82,9 @@ def make_search_request(query, search_type="vector"):
         response_data = response.json() if response.status_code == 200 else None
 
         if response.status_code == 200:
-            print(f"  ✅ 검색 성공 (총 소요시간: {processing_time:.2f}초)")
-        else:
-            print(f"  ❌ 검색 실패 (상태코드: {response.status_code})")
+            print(
+                f"검색 완료 - 소요시간: {processing_time:.2f}초 (연결: {connection_time:.2f}초)"
+            )
 
         return {
             "query": query,
@@ -76,7 +103,7 @@ def make_search_request(query, search_type="vector"):
         }
     except requests.exceptions.Timeout:
         end_time = time.time()
-        print(f"  ⚠️ 요청 시간 초과 (소요시간: {end_time - start_time:.2f}초)")
+        print(f"요청 시간 초과 - 소요시간: {end_time - start_time:.2f}초")
         return {
             "query": query,
             "search_type": search_type,
@@ -89,7 +116,7 @@ def make_search_request(query, search_type="vector"):
         }
     except requests.exceptions.ConnectionError as e:
         end_time = time.time()
-        print(f"  ❌ 연결 오류: {str(e)}")
+        print(f"연결 오류 - 소요시간: {end_time - start_time:.2f}초")
         return {
             "query": query,
             "search_type": search_type,
@@ -102,7 +129,7 @@ def make_search_request(query, search_type="vector"):
         }
     except Exception as e:
         end_time = time.time()
-        print(f"  ❌ 예상치 못한 오류: {str(e)}")
+        print(f"예상치 못한 오류 - 소요시간: {end_time - start_time:.2f}초")
         return {
             "query": query,
             "search_type": search_type,
@@ -117,11 +144,7 @@ def make_search_request(query, search_type="vector"):
 
 def run_concurrent_test(num_users, num_requests_per_user):
     """동시 사용자 테스트 실행"""
-    print(
-        f"\n{'='*50}"
-        f"\n테스트 시작: {num_users}명의 사용자, 각 {num_requests_per_user}개 요청"
-        f"\n{'='*50}"
-    )
+    print(f"\n테스트 시작: {num_users}명의 사용자, 각 {num_requests_per_user}개 요청")
 
     all_results = []
     start_time = time.time()
@@ -130,29 +153,23 @@ def run_concurrent_test(num_users, num_requests_per_user):
     with concurrent.futures.ThreadPoolExecutor(max_workers=num_users) as executor:
         futures = []
         for user_id in range(num_users):
-            print(f"\n👤 사용자 {user_id + 1} 요청 준비 중...")
             for query_idx, query in enumerate(TEST_QUERIES[:num_requests_per_user], 1):
                 for search_type in SEARCH_TYPES:
-                    print(
-                        f"  - 요청 {query_idx}/{num_requests_per_user}: "
-                        f"{search_type} 검색"
-                    )
                     futures.append(
                         executor.submit(make_search_request, query, search_type)
                     )
 
-        print("\n🔄 모든 요청 처리 중...")
         # 결과 수집
         for future in concurrent.futures.as_completed(futures):
             try:
                 result = future.result()
                 all_results.append(result)
             except Exception as e:
-                print(f"❌ 요청 처리 중 오류 발생: {str(e)}")
+                print(f"요청 처리 중 오류 발생: {str(e)}")
 
     end_time = time.time()
     total_time = end_time - start_time
-    print(f"\n⏱️ 테스트 완료 (총 소요시간: {total_time:.2f}초)")
+    print(f"테스트 완료 - 총 소요시간: {total_time:.2f}초")
 
     # 결과 분석
     successful_requests = [r for r in all_results if r["success"]]
@@ -261,14 +278,17 @@ def run_concurrent_test(num_users, num_requests_per_user):
 
 
 def main():
+    # API 서버 상태 확인
+    if not check_api_health():
+        print("\n⚠️ API 서버가 정상적으로 동작하지 않습니다. 테스트를 중단합니다.")
+        return
+
     # 다양한 사용자 수와 요청 수로 테스트
     test_scenarios = [
-        (1, 1),  # 1명이 1개 요청
-        (5, 2),  # 5명이 각각 2개 요청
-        (10, 1),  # 10명이 각각 1개 요청
+        (20, 1),  # 10명이 각각 1개 요청
     ]
 
-    print("🚀 성능 테스트 시작")
+    print("\n🚀 성능 테스트 시작")
 
     for num_users, num_requests in test_scenarios:
         print(f"\n{'='*50}")
@@ -278,7 +298,7 @@ def main():
         run_concurrent_test(num_users, num_requests)
 
         # 각 시나리오 사이에 잠시 대기
-        time.sleep(2)
+        time.sleep(10)  # 대기 시간 증가
 
 
 if __name__ == "__main__":
